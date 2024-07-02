@@ -1,0 +1,10 @@
+
+
+[webservers]
+webserver1 ansible_host=192.168.0.148 ansible_user=cloud-user ansible_ssh_private_key_file=/home/cloud-user/client.pem
+[webservers:vars]
+http_port=80/tcp
+html_page_src=index.html
+html_page_dest=/var/www/html/index.html
+ssh_port=443/tcp
+
